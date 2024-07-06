@@ -9,3 +9,11 @@ variable "subnet_id" {
 variable "security_group_id" {
     default = "sg-0302247745db9def8"
 }
+
+variable "s3_bucket" {
+    default = "tfaws"
+}
+
+variable "key_pair" {
+    default = "tfaws-keypair"
+}

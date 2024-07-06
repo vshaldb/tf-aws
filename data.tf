@@ -8,14 +8,14 @@ data "aws_ami" "amzn-linux-2023-ami" {
   }
 }
 
-data "aws_vpc" "selected" {
+data "aws_vpc" "vpc" {
   id = var.vpc_id
 }
 
-data "aws_subnet" "selected" {
+data "aws_subnet" "subnet" {
   id = var.subnet_id
 }
 
-data "aws_security_group" "selected" {
+data "aws_security_group" "sg" {
   id = var.security_group_id
 }
